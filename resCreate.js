@@ -3,7 +3,7 @@ const colors = require('colors');
 const csv = require('csv-parser');
 
 var dataResults = require('./addDataResults');
-var test = require('./dataTest');
+var test = require('./config/dataTest');
 var fooTest = require('./fooTest');
 
 var bResults = dataResults.bResults;

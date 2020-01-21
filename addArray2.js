@@ -3,7 +3,7 @@ const { results, bResults } = require('./addDataResults');
 
 let test2 = [[-1],[-1]];
 let n1 = 2;
-let lenRes = bResults.length;
+let lenRes = bResults[bResults.length-1].length;
 // console.log(bResults[3][1], lenRes);
 
 while ( n1 < 37 ) {

@@ -1,6 +1,7 @@
 const fs = require('fs');
+const CONFIG = require('./config/config.json');
 
-const filePath = 'results.csv';
+const filePath = CONFIG.fileRes;
 
 var results = [];
 var lines = fs.readFileSync(filePath, 'utf8').split('\n');
@@ -57,7 +58,7 @@ function addFuture(arrayRes) {
   // console.log('tmpFuture'.cyan, tmpFuture);
   
 }
-for ( let i = 0; i < 10; i++ ) {
+for ( let i = 0; i < CONFIG.tstFuture; i++ ) {
   addFuture(bResults);
 }
 
