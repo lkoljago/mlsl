@@ -1,5 +1,6 @@
 const fs = require('fs');
 const CONFIG = require('./config/config.json');
+const ArrayToString = require('./ArrayToString');
 
 const filePath = CONFIG.fileRes;
 
@@ -62,12 +63,16 @@ for ( let i = 0; i < CONFIG.tstFuture; i++ ) {
   addFuture(bResults);
 }
 
-// console.log(future);
-console.log('new length'.cyan, bResults[36].length);
+;
 
+console.log('new length'.cyan, bResults[36].length);
+let chanse = [];
+for ( let i = 1; i < 37; i++) {chanse.push(i)};
+// console.log(ArrayToString.foo1(chanse))
 
 module.exports = {
     results,
     bResults,
-    future
+    future,
+    chanse
 }

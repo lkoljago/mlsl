@@ -11,5 +11,11 @@ module.exports = {
     }
     
     return resString;
+  },
+
+  foo1: function (array) {
+    let len = array.length;
+    let str = array.join(' ');
+    return str;
   }
 }
