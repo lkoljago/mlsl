@@ -3,7 +3,7 @@ module.exports = {
     // whatever
     console.log('summary'.cyan);
     for ( var i = 0 ; i < arr.length; i++ ) {arr[i][1] = JSON.stringify(arr[i][1])};
-    console.log(arr);
+    console.log('from fooTest'.cyan, arr);
   },
   bar: function () {
     // whatever
