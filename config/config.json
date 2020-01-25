@@ -1,7 +1,7 @@
 {
   "fileRes": "./config/results.csv",
   "fileTest": "./config/dataTest.js",
-  "delTopDouble": 100,
-  "tstFuture": 252
+  "delTopDouble": 10,
+  "tstFuture": 10
 
 }
